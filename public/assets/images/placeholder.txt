@@ -1,0 +1,9 @@
+# Placeholder for images
+
+Add your actual images here:
+- Gallery images (gallery-1.jpg through gallery-6.jpg)
+- OG image (og-image.jpg) - 1200x630px
+- Twitter card image (twitter-card.jpg) - 1200x600px
+- Logo files
+
+For now, placeholder images will be generated during build.

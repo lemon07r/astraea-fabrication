@@ -1,0 +1,136 @@
+---
+layout: base.njk
+title: Home
+description: Professional countertop fabrication and installation services. Expert granite, quartz, and marble countertops for kitchens and bathrooms in your area.
+---
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Premium Countertop Fabrication & Installation</h1>
+    <p class="hero-subtitle">Transform your kitchen or bathroom with expertly crafted granite, quartz, and marble countertops. Quality craftsmanship, professional service, competitive pricing.</p>
+    <a href="#contact" class="cta-button">Get Your Free Quote</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">We specialize in custom countertop fabrication and installation with a commitment to quality and customer satisfaction.</p>
+    
+    <div class="services-grid">
+      {% for service in site.services %}
+      <div class="service-card">
+        <div class="service-icon">{{ service.icon }}</div>
+        <h3 class="service-title">{{ service.name }}</h3>
+        <p class="service-description">{{ service.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why Choose Astraea Fabrication?</h2>
+    <p class="section-subtitle">With years of experience and hundreds of satisfied customers, we deliver exceptional results every time.</p>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">⭐</div>
+        <h3 class="service-title">Expert Craftsmanship</h3>
+        <p class="service-description">Our skilled team brings years of experience to every project, ensuring precision and quality.</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">🏆</div>
+        <h3 class="service-title">Premium Materials</h3>
+        <p class="service-description">We work with the finest granite, quartz, and marble from trusted suppliers.</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">💰</div>
+        <h3 class="service-title">Competitive Pricing</h3>
+        <p class="service-description">Get the best value with our transparent pricing and no hidden fees.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="section services">
+  <div class="container">
+    <h2 class="section-title">Our Work</h2>
+    <p class="section-subtitle">See the quality and attention to detail in our completed projects.</p>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="./assets/images/gallery-1.svg" alt="Beautiful granite kitchen countertop installation" width="600" height="450" loading="lazy">
+      </div>
+      
+      <div class="gallery-item">
+        <img src="./assets/images/gallery-2.svg" alt="Elegant quartz bathroom vanity" width="600" height="450" loading="lazy">
+      </div>
+      
+      <div class="gallery-item">
+        <img src="./assets/images/gallery-3.svg" alt="Modern marble kitchen island" width="600" height="450" loading="lazy">
+      </div>
+      
+      <div class="gallery-item">
+        <img src="./assets/images/gallery-4.svg" alt="Stunning granite countertops with custom edge profile" width="600" height="450" loading="lazy">
+      </div>
+      
+      <div class="gallery-item">
+        <img src="./assets/images/gallery-5.svg" alt="Beautiful quartz countertop in modern kitchen" width="600" height="450" loading="lazy">
+      </div>
+      
+      <div class="gallery-item">
+        <img src="./assets/images/gallery-6.svg" alt="Custom marble bathroom countertop" width="600" height="450" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2 class="section-title">Get Your Free Quote Today</h2>
+    <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9);">Contact us for a free consultation and estimate. We're ready to bring your vision to life.</p>
+    
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-label">Call Us</div>
+        <div class="contact-value">
+          <a href="tel:{{ site.business.phone }}">{{ site.business.phone }}</a>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-label">Email Us</div>
+        <div class="contact-value">
+          <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-label">Visit Us</div>
+        <div class="contact-value">
+          {{ site.business.address.street }}<br>
+          {{ site.business.address.city }}, {{ site.business.address.state }} {{ site.business.address.zip }}
+        </div>
+      </div>
+    </div>
+    
+    <div class="business-hours">
+      <h3 style="margin-bottom: 1rem;">Business Hours</h3>
+      <p>{{ site.business.hours.weekdays }}</p>
+      <p>{{ site.business.hours.saturday }}</p>
+      <p>{{ site.business.hours.sunday }}</p>
+    </div>
+  </div>
+</section>

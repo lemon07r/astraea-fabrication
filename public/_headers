@@ -1,0 +1,24 @@
+# Global security and caching headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+
+# Immutable assets with long cache
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages - always revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Images with long cache
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts with long cache
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *

@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo">{{ site.name }}</a>
+    
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      ☰
+    </button>
+    
+    <nav class="site-nav">
+      <ul>
+        {% for item in navigation %}
+        <li>
+          <a href="{{ item.url }}">{{ item.label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
