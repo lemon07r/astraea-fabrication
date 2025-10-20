@@ -5,7 +5,7 @@
   "description": "High-performance landing page for Astraea Fabrication countertop installation",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy",
+    "build": "eleventy && node scripts/generate-sitemap.js",
     "preview": "eleventy --serve --pathprefix=''",
     "analyze": "ANALYZE=true eleventy",
     "clean": "rm -rf _site .11ty-vite .cache"

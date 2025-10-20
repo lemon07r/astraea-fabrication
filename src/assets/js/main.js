@@ -1,3 +1,8 @@
+// Import CSS files - Vite will bundle and optimize them
+import '../css/variables.css';
+import '../css/critical.css';
+import '../css/main.css';
+
 // Minimal JavaScript for navigation toggle
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.menu-toggle');

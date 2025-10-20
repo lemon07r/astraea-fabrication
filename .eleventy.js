@@ -25,6 +25,9 @@ export default function(eleventyConfig) {
       clearScreen: false,
       appType: 'mpa',
       
+      // Include XML and TXT files as assets (sitemap.xml, robots.txt)
+      assetsInclude: ['**/*.xml', '**/*.txt'],
+      
       server: {
         mode: 'development',
         middlewareMode: true,
@@ -32,6 +35,7 @@ export default function(eleventyConfig) {
       
       build: {
         mode: 'production',
+        emptyOutDir: false,  // Don't clear sitemap.xml and robots.txt
         rollupOptions: {
           input: {
             main: path.resolve(__dirname, 'src/assets/js/main.js'),
@@ -94,6 +98,8 @@ export default function(eleventyConfig) {
   // Current year shortcode
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
   
+  // Note: sitemap.xml is generated post-build by scripts/generate-sitemap.js
+  
   return {
     dir: {
       input: 'src',
@@ -102,7 +108,7 @@ export default function(eleventyConfig) {
       layouts: 'layouts',
       data: '_data',
     },
-    templateFormats: ['njk', 'md', 'html'],
+    templateFormats: ['njk', 'md', 'html', 'xml'],
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
   };

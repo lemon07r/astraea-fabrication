@@ -14,30 +14,6 @@
 
 ## 🔧 Important Configuration Fixes Needed
 
-### 1. CSS Processing Issue
-**Problem**: CSS files are currently linked but not processed through Vite.
-
-**Solution Options**:
-A. Import CSS in JavaScript (recommended for Vite):
-   ```javascript
-   // In src/assets/js/main.js
-   import '../css/critical.css'
-   import '../css/main.css'
-   ```
-   
-B. Use Eleventy's CSS passthrough and process separately with PostCSS
-
-**Impact**: Currently CSS won't load properly in production
-
-### 2. Sitemap Generation
-**Issue**: Sitemap.xml template exists but isn't being generated
-
-**Fix**: Check if sitemap.xml.njk needs adjustment or if there's a build configuration issue
-
-### 3. Critical CSS Plugin
-**Status**: Configured but may fail silently
-
-**Todo**: Test and verify rollup-plugin-critical is working correctly after CSS is properly integrated
 
 ## 🎨 Content Updates Needed
 
