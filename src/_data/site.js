@@ -5,14 +5,14 @@ export default {
   
   business: {
     name: 'Astraea Fabrication',
-    phone: '+1-555-123-4567',
-    email: 'info@astraeafabrication.com',
+    phone: '+401-654-3329',
+    email: 'devin@astraeafabrication.com',
     
     address: {
       street: '123 Main Street',
-      city: 'YourCity',
-      state: 'ST',
-      zip: '12345',
+      city: 'Providence',
+      state: 'RI',
+      zip: '02909',
     },
     
     geo: {
