@@ -7,6 +7,7 @@ export default {
     name: 'Astraea Fabrication',
     phone: '+401-654-3329',
     email: 'devin@astraeafabrication.com',
+    email2: 'rose@astraeafabrication.com',
     
     address: {
       street: '123 Main Street',

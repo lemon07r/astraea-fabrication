@@ -217,7 +217,7 @@ a {
   background: var(--color-accent-light);
   color: var(--color-accent);
   padding: 0.4rem 1rem;
-  border-radius: 100px;
+  border-radius: 8px;
   font-size: var(--font-size-sm);
   font-weight: 600;
   margin-bottom: var(--space-lg);
