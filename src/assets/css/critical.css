@@ -348,14 +348,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-white);
-  padding: var(--space-sm);
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: 0 0 20px rgba(232, 145, 45, 0.15);
 }
 
 .hero-logo-card img {
-  max-height: 80px;
+  max-height: 90px;
   width: auto;
   object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 .hero-info-card {
