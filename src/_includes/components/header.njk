@@ -1,9 +1,19 @@
 <header class="site-header">
   <div class="header-container">
-    <a href="/" class="site-logo">{{ site.name }}</a>
+    <a href="/" class="site-logo">
+      <picture>
+        <source srcset="/assets/images/logos/logo-header.webp" type="image/webp">
+        <img src="/assets/images/logos/logo-header.png" alt="Astraea Fabrication logo" width="80" height="44">
+      </picture>
+      <span class="site-logo-text">Astraea <span>Fabrication</span></span>
+    </a>
     
     <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-      ☰
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </button>
     
     <nav class="site-nav">
@@ -15,5 +25,7 @@
         {% endfor %}
       </ul>
     </nav>
+    
+    <a href="#contact" class="header-cta">Get a Quote</a>
   </div>
 </header>

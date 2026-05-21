@@ -8,7 +8,7 @@ export default [
     url: '#services',
   },
   {
-    label: 'Gallery',
+    label: 'Work',
     url: '#gallery',
   },
   {
