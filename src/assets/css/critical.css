@@ -61,6 +61,17 @@ a {
   color: var(--color-white);
 }
 
+.site-logo-img {
+  flex-shrink: 0;
+  margin-right: 0.6rem;
+}
+
+.site-logo-img img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
 .site-logo-text {
   font-size: var(--font-size-xl);
   font-weight: 700;
@@ -329,8 +340,22 @@ a {
 
 .hero-info-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   gap: var(--space-sm);
+}
+
+.hero-logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  padding: var(--space-sm);
+}
+
+.hero-logo-card img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
 }
 
 .hero-info-card {
@@ -386,6 +411,10 @@ a {
   }
 
   .hero-info-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-logo-card {
+    grid-column: 1 / -1;
   }
 }
