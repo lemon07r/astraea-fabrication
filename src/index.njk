@@ -83,7 +83,7 @@ description: Professional countertop fabrication and installation services. Expe
     </div>
     
     <div class="gallery-grid">
-      <div class="gallery-item">
+      <a class="gallery-item" href="/assets/images/gallery/marble-shower-enclosure.jpg" data-lightbox>
         <picture>
           <source srcset="/assets/images/gallery/marble-shower-enclosure.webp" type="image/webp">
           <img src="/assets/images/gallery/marble-shower-enclosure.jpg" alt="Custom marble shower enclosure with glass doors" width="600" height="450" loading="lazy">
@@ -91,9 +91,9 @@ description: Professional countertop fabrication and installation services. Expe
         <div class="gallery-item-overlay">
           <p>Marble Shower Enclosure</p>
         </div>
-      </div>
+      </a>
       
-      <div class="gallery-item">
+      <a class="gallery-item" href="/assets/images/gallery/commercial-bar-counter.jpg" data-lightbox>
         <picture>
           <source srcset="/assets/images/gallery/commercial-bar-counter.webp" type="image/webp">
           <img src="/assets/images/gallery/commercial-bar-counter.jpg" alt="Commercial bar counter with LED lighting and quartz surface" width="600" height="450" loading="lazy">
@@ -101,9 +101,9 @@ description: Professional countertop fabrication and installation services. Expe
         <div class="gallery-item-overlay">
           <p>Commercial Bar Counter</p>
         </div>
-      </div>
+      </a>
       
-      <div class="gallery-item">
+      <a class="gallery-item" href="/assets/images/gallery/luxury-commercial-interior.jpg" data-lightbox>
         <picture>
           <source srcset="/assets/images/gallery/luxury-commercial-interior.webp" type="image/webp">
           <img src="/assets/images/gallery/luxury-commercial-interior.jpg" alt="Luxury commercial interior with black granite and gold accents" width="600" height="450" loading="lazy">
@@ -111,9 +111,9 @@ description: Professional countertop fabrication and installation services. Expe
         <div class="gallery-item-overlay">
           <p>Luxury Commercial Interior</p>
         </div>
-      </div>
+      </a>
       
-      <div class="gallery-item">
+      <a class="gallery-item" href="/assets/images/gallery/quartz-countertop-kitchen.jpg" data-lightbox>
         <picture>
           <source srcset="/assets/images/gallery/quartz-countertop-kitchen.webp" type="image/webp">
           <img src="/assets/images/gallery/quartz-countertop-kitchen.jpg" alt="Corian countertop kitchen with stainless steel sink" width="600" height="450" loading="lazy">
@@ -121,9 +121,9 @@ description: Professional countertop fabrication and installation services. Expe
         <div class="gallery-item-overlay">
           <p>Corian Kitchen Countertop</p>
         </div>
-      </div>
+      </a>
       
-      <div class="gallery-item">
+      <a class="gallery-item" href="/assets/images/gallery/marble-wetbar-countertop.jpg" data-lightbox>
         <picture>
           <source srcset="/assets/images/gallery/marble-wetbar-countertop.webp" type="image/webp">
           <img src="/assets/images/gallery/marble-wetbar-countertop.jpg" alt="Quartzite wet bar countertop with wine cooler" width="600" height="450" loading="lazy">
@@ -131,9 +131,9 @@ description: Professional countertop fabrication and installation services. Expe
         <div class="gallery-item-overlay">
           <p>Quartzite Wet Bar Countertop</p>
         </div>
-      </div>
+      </a>
       
-      <div class="gallery-item gallery-item-edge-profiles">
+      <a class="gallery-item gallery-item-edge-profiles" href="/assets/images/gallery/edge-profiles-reference.jpg" data-lightbox>
         <picture>
           <source srcset="/assets/images/gallery/edge-profiles-reference.webp" type="image/webp">
           <img src="/assets/images/gallery/edge-profiles-reference.jpg" alt="Available countertop edge profile options including round, bevel, ogee, bullnose, and waterfall" width="600" height="450" loading="lazy">
@@ -141,7 +141,7 @@ description: Professional countertop fabrication and installation services. Expe
         <div class="gallery-item-overlay">
           <p>Edge Profile Options</p>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -155,7 +155,12 @@ description: Professional countertop fabrication and installation services. Expe
     </div>
     
     <div class="contact-form">
-      <form action="#" method="POST">
+      <form action="https://formsubmit.co/devin@astraeafabrication.com" method="POST">
+        <input type="hidden" name="_cc" value="rose@astraeafabrication.com">
+        <input type="hidden" name="_subject" value="New quote request from Astraea Fabrication website">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="{{ site.url }}/#contact">
+        <input type="text" name="_honey" style="display:none">
         <div class="form-row">
           <div class="form-group">
             <input type="text" id="name" name="name" placeholder="Name" required>
