@@ -34,29 +34,19 @@ export default {
   
   services: [
     {
-      name: 'Granite Countertops',
+      name: 'Granite',
       description: 'Durable and elegant granite countertops in a variety of colors and patterns.',
       icon: '🪨',
     },
     {
-      name: 'Quartz Countertops',
+      name: 'Quartz',
       description: 'Low-maintenance quartz surfaces that combine beauty with practicality.',
       icon: '💎',
     },
     {
-      name: 'Marble Countertops',
+      name: 'Marble',
       description: 'Luxurious marble countertops for a timeless, sophisticated look.',
       icon: '🏛️',
-    },
-    {
-      name: 'Custom Fabrication',
-      description: 'Precision cutting and fabrication tailored to your exact specifications.',
-      icon: '✂️',
-    },
-    {
-      name: 'Professional Installation',
-      description: 'Expert installation ensuring perfect fit and long-lasting quality.',
-      icon: '🔧',
     },
     {
       name: 'Edge Profiles',
