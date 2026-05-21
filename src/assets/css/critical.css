@@ -322,7 +322,7 @@ a {
 .hero-visual {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-sm);
 }
 
 .hero-image-wrapper {
@@ -341,7 +341,8 @@ a {
 .hero-info-cards {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
-  gap: var(--space-sm);
+  gap: 0.75rem;
+  align-items: stretch;
 }
 
 .hero-logo-card {
@@ -351,11 +352,11 @@ a {
   background: #fff;
   border: 2px solid var(--color-accent);
   border-radius: var(--border-radius-lg);
-  padding: var(--space-md);
+  padding: 0.5rem 0.75rem;
 }
 
 .hero-logo-card img {
-  max-height: 60px;
+  max-height: 40px;
   width: auto;
   object-fit: contain;
 }
@@ -364,7 +365,7 @@ a {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-lg);
-  padding: var(--space-md);
+  padding: 0.75rem 1rem;
 }
 
 .hero-info-card-label {
@@ -373,7 +374,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-accent);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .hero-info-card p {
